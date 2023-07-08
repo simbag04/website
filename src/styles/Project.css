@@ -6,11 +6,13 @@
 
 .projects ul li {
     margin: 0;
-    padding: 0;
+    padding: 100px 0px;
 }
 
 .project {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
 }
 
 .project-title {
@@ -24,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .subsection {
@@ -32,10 +34,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .subtitle {
     font-weight: bold;
+    font-weight: 26px;
 }
 
 img {
@@ -44,10 +48,16 @@ img {
     min-height: 100%;
     max-height: 100%;
     object-fit: contain;
+    box-shadow: 5px 5px black;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
     .project {
+        display: flex;
         flex-direction: column;
     }
 }
