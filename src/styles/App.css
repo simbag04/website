@@ -1,8 +1,68 @@
 body {
     margin: 0;
-    padding: 0px 200px;
+    padding: 0px 0px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .section {
-    padding: 100px 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title, .title, .subtitle, .header {
+    font-family: 'Caveat', cursive;
+}
+
+.main-title, .title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.title {
+    padding: 20px 0px;
+} 
+
+@media (max-width: 1200px) {
+    .section, .header {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section, .header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section, .header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section, .header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }

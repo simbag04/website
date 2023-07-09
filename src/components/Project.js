@@ -14,7 +14,7 @@ const Project = (props) => {
                 </div>
             </div>
             <div className='image'>
-                <img src={props.img} alt="" sizes="100vw"></img>
+                <img src={props.img} alt=""></img>
             </div>
         </div>
     )

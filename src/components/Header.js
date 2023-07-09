@@ -1,10 +1,20 @@
 import HeaderLinks from "./HeaderLinks"
 import '../styles/Header.css'
+import {useEffect, useRef } from "react"
 
-const Header = () => {
+const Header = ({setHeaderHeight}) => {
+    const ref = useRef();
+   
+    useEffect(() => {
+        if (ref.current) {
+            setHeaderHeight(ref.current.clientHeight);
+        }
+    }, [setHeaderHeight])
+    
+
     return (
-        <div className="header section">
-            <div className="title">Simran Bagaria</div>
+        <div className="header" ref={ref}>
+            <div className="main-title">Simran Bagaria</div>
             <HeaderLinks></HeaderLinks>
         </div>
     )

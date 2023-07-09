@@ -3,13 +3,13 @@ import Contact from "./Contact"
 import Home from "./Home"
 import Projects from "./Projects"
 
-const Main = () => {
+const Main = (props) => {
     return (
-        <div>
-            <Home></Home>
-            <About></About>
+        <div className="main">
+            <Home headerHeight={props.headerHeight}></Home>
+            <About headerHeight={props.headerHeight}></About>
             <Projects></Projects>
-            <Contact></Contact>
+            <Contact headerHeight={props.headerHeight}></Contact>
         </div>
     )
 }
