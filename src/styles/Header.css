@@ -14,16 +14,18 @@
     z-index: 50;
 }
 
-.header svg {
+.header img {
+    width: 2em;
+    height: 2em;
     display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .header ul {
         display: none;
     }
 
-    .header svg {
+    .header img {
         display: block;
     }
 }

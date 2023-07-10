@@ -8,11 +8,11 @@ body {
     color: white;
 }
 
-.header {
+.header, .menu-bar {
     background-color: var(--black);
 }
 
-.header ul li.active {
+.header ul li.active, .menu-bar div.active {
     color: var(--highlight);
 }
 

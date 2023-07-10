@@ -3,8 +3,10 @@ import Main from "./Main";
 import '../styles/App.css'
 import '../styles/Colors.css'
 import { useState } from "react";
+import { useWindowSize } from "./useWindowSize";
 
 function App() {
+  const [width, height] = useWindowSize();
   const [headerHeight, setHeaderHeight] = useState(0);
 
   const [aboutStart, setAboutStart] = useState(0);
@@ -13,7 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header headerHeight={headerHeight}
+      <Header width={width}
+              height={height}
+              headerHeight={headerHeight}
               setHeaderHeight={setHeaderHeight} 
               aboutStart={aboutStart}
               projectsStart={projectsStart}
