@@ -1,0 +1,57 @@
+:root {
+    --highlight: rgba(141, 198, 255, 0.8);
+    --black: #232b2b;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header ul li.active {
+    color: var(--highlight);
+}
+
+
+.about {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.contact {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.project a:visited {
+    color: white;
+}
+
+.project a {
+    color: white;
+}
+
+/*
+
+.title {
+    color: var(--highlight);
+}
+
+hr {
+    background-color: var(--highlight);
+}
+
+
+
+.home {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+
+
+*/          

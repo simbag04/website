@@ -11,5 +11,19 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: lavenderblush;
+    z-index: 50;
+}
+
+.header svg {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .header ul {
+        display: none;
+    }
+
+    .header svg {
+        display: block;
+    }
 }

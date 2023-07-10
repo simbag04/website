@@ -3,11 +3,21 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 15px;
 }
 
 .header ul li {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     font-size: 20px;
+}
+
+.header ul li.active {
+    transform: scale(1.25);
+    transition: transform 0.25s;
+}
+
+.header ul li:hover {
+    cursor: pointer;
 }

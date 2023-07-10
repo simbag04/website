@@ -6,3 +6,9 @@
     font-size: 32px;
     height: 100%;
 }
+
+@media (max-width: 400px) {
+    .about-info, .contact-info {
+        font-size: 28px;
+    }
+}

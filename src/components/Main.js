@@ -7,9 +7,9 @@ const Main = (props) => {
     return (
         <div className="main">
             <Home headerHeight={props.headerHeight}></Home>
-            <About headerHeight={props.headerHeight}></About>
-            <Projects></Projects>
-            <Contact headerHeight={props.headerHeight}></Contact>
+            <About headerHeight={props.headerHeight} setAboutStart={props.setAboutStart}></About>
+            <Projects setProjectsStart={props.setProjectsStart}></Projects>
+            <Contact headerHeight={props.headerHeight} setContactStart={props.setContactStart}></Contact>
         </div>
     )
 }

@@ -20,3 +20,18 @@
     height: auto;
 }
 
+img {
+    transition: transform 0.25s 0s;
+}
+
+.contact img:hover {
+    transform: scale(1.25);
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+svg {
+    fill: white;
+}

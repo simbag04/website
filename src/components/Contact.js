@@ -1,10 +1,20 @@
 import '../styles/Contact.css'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
+import { useRef, useEffect } from 'react'
 
 const Contact = (props) => {
+    const ref = useRef();
+   
+    useEffect(() => {
+        if (ref.current) {
+            props.setContactStart(ref.current.offsetTop);
+            console.log(ref.current.offsetTop);
+        }
+    }, [props, props.setContactStart])
+
     return (
-        <div className="contact section"
+        <div className="contact section" ref={ref}
             style={{height: `calc(100vh - ${props.headerHeight}px)`}}>
             <div className="title">Contact</div>
             <div className='contact-info'>
@@ -12,10 +22,12 @@ const Contact = (props) => {
             </div>
             <ul className='contact-icons'>
                 <li>
-                    <a href='https://github.com/simbag04'><img src={github} alt=""></img></a>
+                    <a href='https://github.com/simbag04' target="_blank" rel="noreferrer">
+                        <img src={github} alt=""></img>
+                    </a>
                 </li>
                 <li>
-                    <a href='https://www.linkedin.com/in/simran-bagaria-12bb79246/'>
+                    <a href='https://www.linkedin.com/in/simran-bagaria-12bb79246/' target="_blank" rel="noreferrer">
                         <img src={linkedin} alt=""></img>
                     </a>
                 </li>

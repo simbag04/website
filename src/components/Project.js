@@ -12,6 +12,14 @@ const Project = (props) => {
                     <div className="subtitle">Technologies</div>
                     <div>{props.technologies}</div>
                 </div>
+                <div className="site-links">
+                    <a href={props.site} target="_blank" rel="noreferrer">
+                        Live Site
+                    </a>
+                    <a href={props.repo} target="_blank" rel="noreferrer">
+                        Code
+                    </a>
+                </div>
             </div>
             <div className='image'>
                 <img src={props.img} alt=""></img>

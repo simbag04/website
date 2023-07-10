@@ -21,7 +21,7 @@ body {
     flex-direction: column;
 }
 
-.main-title, .title, .subtitle, .header {
+.main-title, .title, .subtitle, .header, .site-links {
     font-family: 'Caveat', cursive;
 }
 

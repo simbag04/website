@@ -5,4 +5,31 @@
     font-size: 60px;
     text-align: center;
     padding: 0px 20px;
+    position: relative;
+}
+
+.home div {
+    position: absolute;
+    animation: 2s from-bottom;
+    position: relative;
+}
+
+@keyframes change-color {
+    from {
+      background-color: red;
+    }
+
+    to {
+      background-color: green;
+    }
+  } 
+
+@keyframes from-bottom {    
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0px;
+    }
 }
