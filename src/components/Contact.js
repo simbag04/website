@@ -15,7 +15,7 @@ const Contact = (props) => {
 
     return (
         <div className="contact section" ref={ref}
-            style={{height: `calc(100vh - ${props.headerHeight}px)`}}>
+            style={{minHeight: `calc(100vh - ${props.headerHeight}px)`}}>
             <div className="title">Contact</div>
             <div className='contact-info'>
                 I am currently looking for SWE Internships for the 2023-2024 recruiting season. Please feel free to reach me at sbagaria@uw.edu for any opportunities, questions, or just to chat!
