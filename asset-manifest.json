@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.0f1c9980.css",
-    "main.js": "/website/static/js/main.74dfc1ee.js",
+    "main.css": "/website/static/css/main.ab8f1b86.css",
+    "main.js": "/website/static/js/main.a420fc44.js",
     "static/media/wheres-waldo.png": "/website/static/media/wheres-waldo.4fc704c035017f894ced.png",
     "static/media/library.png": "/website/static/media/library.eeb469adef18936959ef.png",
     "index.html": "/website/index.html",
     "static/media/github.svg": "/website/static/media/github.0508855c678f433e24578aac5e7fc17b.svg",
     "static/media/linkedin.svg": "/website/static/media/linkedin.c82c8ae7889f48df0d1447bc229510a6.svg",
     "static/media/menu.svg": "/website/static/media/menu.ce3e254e6982c0ba4ab13cffec5119a1.svg",
-    "main.0f1c9980.css.map": "/website/static/css/main.0f1c9980.css.map",
-    "main.74dfc1ee.js.map": "/website/static/js/main.74dfc1ee.js.map"
+    "main.ab8f1b86.css.map": "/website/static/css/main.ab8f1b86.css.map",
+    "main.a420fc44.js.map": "/website/static/js/main.a420fc44.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f1c9980.css",
-    "static/js/main.74dfc1ee.js"
+    "static/css/main.ab8f1b86.css",
+    "static/js/main.a420fc44.js"
   ]
 }
