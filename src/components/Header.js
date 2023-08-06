@@ -5,7 +5,7 @@ import menu from '../images/menu.svg'
 import MenuBar from "./MenuBar"
 import { useScrollPosition } from "./useScrollPosition"
 
-const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, projectsStart, contactStart}) => {
+const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, skillsStart, projectsStart, contactStart}) => {
     const ref = useRef();
    
     useEffect(() => {
@@ -17,6 +17,7 @@ const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, proje
     const scrollY = useScrollPosition()
     const about = aboutStart - headerHeight - (height * 0.5);
     const projects = projectsStart - headerHeight - (height * 0.5);
+    const skills = skillsStart - headerHeight - (height * 0.5);
     const contact = contactStart - headerHeight - 1 - (height * 0.5);
 
     const getCurrentSection = () => {
@@ -24,8 +25,10 @@ const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, proje
             return "home"
         } else if (projects > scrollY && about <= scrollY) {
             return "about"
-        } else if (contact > scrollY && projects <= scrollY) {
+        } else if (skills > scrollY && projects <= scrollY) {
             return "projects"
+        } else if (contact > scrollY && skills <= scrollY) {
+            return "skills"
         } else {
             return "contact"
         }
@@ -45,6 +48,11 @@ const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, proje
         } else if (section === "projects") {
             window.scrollTo({
                 top: projectsStart - headerHeight,
+                behavior: "smooth"
+            });
+        } else if (section === "skills") {
+            window.scrollTo({
+                top: skillsStart - headerHeight,
                 behavior: "smooth"
             });
         } else if (section === "contact") {

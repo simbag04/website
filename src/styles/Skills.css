@@ -1,0 +1,28 @@
+.all-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  grid-auto-flow: row;
+  align-items: stretch;
+  justify-items: stretch;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  flex: 1;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 30px;
+}
+
+.skill-name {
+  font-size: 20px;
+}
+
+.skills {
+  padding-bottom: 20px;
+}

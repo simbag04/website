@@ -24,6 +24,11 @@ const HeaderLinks = ({highlight, headerClickHandler}) => {
                     onClick={clickHandler}>
                     Projects
                 </li>
+                <li id="skills" 
+                    className={highlight === "skills" ? "active" : ""}
+                    onClick={clickHandler}>
+                    Skills
+                </li>
                 <li id="contact"
                     className={highlight === "contact" ? "active" : ""}
                     onClick={clickHandler}>

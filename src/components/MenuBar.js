@@ -23,6 +23,11 @@ const MenuBar = ({highlight, headerClickHandler}) => {
                  onClick={clickHandler}>
                     Projects
             </div>
+            <div id="skills"
+                 className={highlight === "skills" ? "active" : ""}
+                 onClick={clickHandler}>
+                    Skills
+            </div>
             <div id="contact"
                  className={highlight === "contact" ? "active" : ""}
                  onClick={clickHandler}>

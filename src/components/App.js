@@ -10,6 +10,7 @@ function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
 
   const [aboutStart, setAboutStart] = useState(0);
+  const [skillsStart, setSkillsStart] = useState(0);
   const [projectsStart, setProjectsStart] = useState(0);
   const [contactStart, setContactStart] = useState(0);
 
@@ -20,11 +21,13 @@ function App() {
               headerHeight={headerHeight}
               setHeaderHeight={setHeaderHeight} 
               aboutStart={aboutStart}
+              skillsStart={skillsStart}
               projectsStart={projectsStart}
               contactStart={contactStart}
       ></Header>
       <Main headerHeight={headerHeight}
             setAboutStart={setAboutStart}
+            setSkillsStart={setSkillsStart}
             setProjectsStart={setProjectsStart}
             setContactStart={setContactStart}
       ></Main>

@@ -17,12 +17,7 @@ body {
 }
 
 
-.about {
-    background-color: var(--highlight);
-    color: white;
-}
-
-.contact {
+.about, .skills {
     background-color: var(--highlight);
     color: white;
 }
@@ -34,24 +29,4 @@ body {
 .project a {
     color: white;
 }
-
-/*
-
-.title {
-    color: var(--highlight);
-}
-
-hr {
-    background-color: var(--highlight);
-}
-
-
-
-.home {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-}
-
-
-
-*/          
+     

@@ -22,7 +22,7 @@ const Project = (props) => {
                 </div>
             </div>
             <div className='image'>
-                <img src={props.img} alt=""></img>
+                <img src={props.img} alt="Project Screenshot"></img>
             </div>
         </div>
     )
