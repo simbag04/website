@@ -1,6 +1,6 @@
 import Project from "./Project"
 import Waldo from '../images/wheres-waldo.png'
-import Library from '../images/library.png'
+import Blog from '../images/blog.png'
 import '../styles/Project.css'
 import { useRef, useEffect } from 'react'
 
@@ -18,19 +18,19 @@ const Projects = (props) => {
         <div className="projects section" ref={ref}>
             <div className="title">Projects</div>
             <ul>
+                <li><Project title="Blog" 
+                            img={Blog} 
+                            description="A full-stack Blog application which allows users to view and comment on blog posts, as well as create, edit, and delete their own posts"
+                            technologies="MongoDB, Express.js, React.js, Node.js, REST API"
+                            site="https://simbag04.github.io/blog-client/"
+                            repo="https://github.com/simbag04/blog-client">
+                    </Project></li>
                 <li><Project title="Where's Waldo" 
                             img={Waldo} 
-                            description="A photo tagging app inspired by the game 'Where's Waldo'. Features a leaderboard as well."
+                            description="A front-end photo tagging app inspired by the game 'Where's Waldo'. Features a leaderboard that keeps track of different high scores."
                             technologies="React.js, HTML, CSS, Firebase"
                             site="https://simbag04.github.io/wheres-waldo"
                             repo="https://github.com/simbag04/wheres-waldo">
-                    </Project></li>
-                <li><Project title="Library" 
-                            img={Library}
-                            description="An app where users can track books - users can add and remove books from their library, change the 'read' status, and also save their information by logging in"
-                            technologies="HTML, CSS, JavaScript, Firebase"
-                            site="https://simbag04.github.io/library"
-                            repo="https://github.com/simbag04/library">
                     </Project></li>
             </ul>
         </div>
