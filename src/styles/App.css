@@ -19,6 +19,7 @@ body {
     padding-right: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-title, .title, .subtitle, .header, .site-links, .menu-bar {
@@ -28,6 +29,7 @@ body {
 .main-title, .title {
     font-weight: bold;
     font-size: 36px;
+    align-self: flex-start;
 }
 
 .title {

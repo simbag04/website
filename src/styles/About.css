@@ -8,12 +8,23 @@
     flex: 1;
 }
 
-.about-info {
+.about, .about-info {
     padding-bottom: 40px;
+}
+
+.about img {
+    width: 60%;
+    text-align: center;
 }
 
 @media (max-width: 400px) {
     .about-info, .contact-info {
         font-size: 28px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about img {
+        width: 80%;
     }
 }
