@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.c3b8c4f9.css",
-    "main.js": "/website/static/js/main.74a22bcc.js",
+    "main.js": "/website/static/js/main.1bb0a5c6.js",
     "static/media/wheres-waldo.png": "/website/static/media/wheres-waldo.4fc704c035017f894ced.png",
     "static/media/simran-pic.jpg": "/website/static/media/simran-pic.9cfd549b03914705d3ba.jpg",
     "static/media/blog.png": "/website/static/media/blog.3937a2b00abeb328e9d0.png",
@@ -10,10 +10,10 @@
     "static/media/linkedin.svg": "/website/static/media/linkedin.c82c8ae7889f48df0d1447bc229510a6.svg",
     "static/media/menu.svg": "/website/static/media/menu.ce3e254e6982c0ba4ab13cffec5119a1.svg",
     "main.c3b8c4f9.css.map": "/website/static/css/main.c3b8c4f9.css.map",
-    "main.74a22bcc.js.map": "/website/static/js/main.74a22bcc.js.map"
+    "main.1bb0a5c6.js.map": "/website/static/js/main.1bb0a5c6.js.map"
   },
   "entrypoints": [
     "static/css/main.c3b8c4f9.css",
-    "static/js/main.74a22bcc.js"
+    "static/js/main.1bb0a5c6.js"
   ]
 }
