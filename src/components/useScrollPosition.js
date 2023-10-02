@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 export const useScrollPosition = () => {
 
    const [scrollPosition, setPosition] = useState(0)
 
-   useEffect(() => {
+   useLayoutEffect(() => {
     function updatePosition() {
+        console.log("here")
         setPosition(window.scrollY)
     }
 

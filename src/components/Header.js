@@ -1,6 +1,6 @@
 import HeaderLinks from "./HeaderLinks"
 import '../styles/Header.css'
-import {useEffect, useRef } from "react"
+import {useLayoutEffect, useRef } from "react"
 import menu from '../images/menu.svg'
 import MenuBar from "./MenuBar"
 import { useScrollPosition } from "./useScrollPosition"
@@ -8,7 +8,7 @@ import { useScrollPosition } from "./useScrollPosition"
 const Header = ({width, height, headerHeight, setHeaderHeight, aboutStart, skillsStart, projectsStart, contactStart}) => {
     const ref = useRef();
    
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (ref.current) {
             setHeaderHeight(ref.current.clientHeight);
         }

@@ -7,15 +7,28 @@ export const Skills = (props) => {
   const ref = useRef();
    
   useEffect(() => {
-      if (ref.current) {
-          props.setSkillsStart(ref.current.offsetTop);
-          console.log(ref.current.offsetTop);
-      }
-  }, [props, props.setSkillsStart])
+    const element = ref.current;
+    if (!element) return;
+
+    const resizeObserver = new ResizeObserver(entries => {
+        for (const entry of entries) {
+            if (entry.target === element) {
+                props.setSkillsStart(ref.current.offsetTop);
+            }
+        }
+    });
+
+    resizeObserver.observe(element);
+
+    return () => {
+        resizeObserver.unobserve(element);
+        resizeObserver.disconnect();
+    };
+}, [props, props.setSkillsStart, ref]);
 
   return (
     <div className="skills section" ref={ref}
-          style={{minHeight: `calc(100vh - ${props.headerHeight}px + 5px)`}}>
+          style={{minHeight: `calc(100vh - ${props.headerHeight}px)`}}>
       <div className="title">Skills</div>
       <div className="all-skills">
         <Skill img={JavaLink} name="Java" alt="Java Icon"></Skill>
